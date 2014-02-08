@@ -1,0 +1,2 @@
+mod build/.libs/mod_authnz_persona.so
+mod debian/authnz_persona.load

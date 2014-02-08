@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+# Override upstream Makefile's default of /usr/sbin/apxs; on Debian and
+# Ubuntu, apxs is in /usr/bin and available through PATH like any other
+# build tool.
+export APXS_PATH = apxs
+
+%:
+	dh $@ --with apache2
+
+override_dh_auto_install:
+	# Do not install; dh_apache2 will pick up the module and install
+	# it itself.

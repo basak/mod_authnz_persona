@@ -1,0 +1,18 @@
+Source: mod-authnz-persona
+Section: web
+Priority: optional
+Maintainer: Robie Basak <robie@justgohome.co.uk>
+Build-Depends: debhelper (>= 9), apache2-dev, dh-apache2, libcurl4-nss-dev, libyajl-dev
+Standards-Version: 3.9.5
+Homepage: https://github.com/mozilla/mod_authnz_persona
+
+Package: libapache2-mod-authnz-persona
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Apache module implementing Persona authentication
+ Mozilla Persona allows users to sign in to sites using any of their
+ existing email addresses. It is built on the BrowserID protocol, a
+ decentralized authentication technology based on verified email
+ addresses.
+ .
+ This modules provides Persona authentication for Apache.

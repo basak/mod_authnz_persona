@@ -1,0 +1,21 @@
+On Debian and Ubuntu, you can activate this module as follows:
+
+1. Install apache2 and this package itself, if you haven't already done
+   this.
+
+2. Run "a2enmod authnz_persona" to enable the module.
+
+3. Edit your Apache site in /etc/apache2/sites-available/ (the default
+   is 000-default.conf). Add a Location directive to protect the
+   required areas of your site as described in README.md; the LoadModule
+   is handled by packaging using "a2enmod" above, and is not required
+   here.
+
+Example:
+
+    <Location />
+       AuthType Persona
+       Require valid-user
+    </Location>
+
+4. Run "service apache2 restart" to pick up your changes.

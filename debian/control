@@ -15,4 +15,4 @@ Description: Apache module implementing Persona authentication
  decentralized authentication technology based on verified email
  addresses.
  .
- This modules provides Persona authentication for Apache.
+ This module provides Persona authentication for Apache.

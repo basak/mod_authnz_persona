@@ -1,5 +1,5 @@
-mod-authnz-persona (0.8.1-1~alpha2) UNRELEASED; urgency=medium
+mod-authnz-persona (0.8.1-1~alpha3) UNRELEASED; urgency=medium
 
-  * Initial release. (Closes: #XXXXXX)
+  * Initial release. (Closes: #742851)
 
  -- Robie Basak <robie@justgohome.co.uk>  Sat, 08 Feb 2014 15:31:46 +0000
